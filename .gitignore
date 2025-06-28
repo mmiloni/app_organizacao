@@ -1,0 +1,19 @@
+# Evita versionar scripts temporários/de manutenção
+deletar_tabela.py
+delete_conversations.py
+select.py
+
+# Evita versionar o banco de dados local
+infos_pendencias.db
+
+# Evita versionar a pasta do ambiente virtual (se estiver dentro do projeto)
+venv/
+__pycache__/
+*.pyc
+
+# Evita arquivos temporários de sistema/editor
+*.log
+.DS_Store
+*.swp
+*.swo
+*.bak
