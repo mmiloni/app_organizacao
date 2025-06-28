@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS tasks (
     description TEXT,
     priority TEXT CHECK(priority IN ('Alta', 'Média', 'Baixa')) NOT NULL DEFAULT 'Média',
     status TEXT CHECK(status IN ('Pendente', 'Concluído')) NOT NULL DEFAULT 'Pendente',
-    created_at TEXT NOT NULL
-    deadline TEXT,
+    created_at TEXT NOT NULL,
+    deadline TEXT
 );
 
 CREATE TABLE IF NOT EXISTS links (
